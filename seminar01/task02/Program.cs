@@ -1,9 +1,16 @@
 ﻿Console.WriteLine("Введите целое положительное число N:");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int count = -num;
-while (count <= num)
+if (num > 0)
 {
-    Console.Write(count + " ");
-    count++;
+    int count = -num;
+    while (count <= num)
+    {
+        Console.Write(count + " ");
+        count++;
+    }
+}
+else
+{
+    Console.WriteLine("Введено некорректное число");
 }
