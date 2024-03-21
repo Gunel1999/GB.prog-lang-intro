@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Введите трехзначное целое число:");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number > 100 && number < 999)
+if (number >= 100 && number <= 999)
 {
     int firstDigit = number / 100;
     int lastDigit = number % 10;
